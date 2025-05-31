@@ -388,6 +388,9 @@
 # print(result)
 
 
+
+
+# 1.Write a program that takes your name and age as input and prints them.
 # def sum_num():
 #     total=0
 #     num = list(map(int, input("enter number here").split()))   
@@ -404,7 +407,7 @@
 # print("Average:", avgra)
 
 
-
+# 2.Write a program that adds two numbers entered by the user.
 # def sum_num():
 #     num = list(map(int, input("Enter numbers here: ").split()))   
 #     total = 0
@@ -424,9 +427,8 @@
 
 
 
-
-
-
+# 3.Convert temperature from Celsius to Fahrenheit.
+# Formula: F = (C × 9/5) + 32
 # def convertCtoF(Celsius):
 #     fahrenheit = (Celsius * 9/5) + 32
 #     return(fahrenheit)
@@ -435,6 +437,7 @@
 
 
 
+# 4.Check whether a number is even or odd.
 # def evenOrOdd(num):
 #     if num%2==0:
 #         return "Its even"
@@ -444,6 +447,8 @@
 # print(EoO)
 
 
+
+# 5.Write a program that checks whether a number is positive, negative, or zero.
 # def checkNumber(num):
 #     if num > 0:
 #         return "Its positive"
@@ -455,6 +460,8 @@
 # print(nPZ)
 
 
+
+# 6.Take a number from the user and check if it's divisible by 3 and 5 both.
 # num = int(input("Enter a number"))
 # def Dividable(num):
 #     if num%3==0 and num%5==0:
@@ -465,6 +472,8 @@
 # print(D)
 
 
+
+# 7.Write a program to find the largest among three numbers.
 # num1 = int(input("Enter a number"))
 # num2 = int(input("Enter a number"))
 # num3 = int(input("Enter a number"))
@@ -474,24 +483,26 @@
 #     if num2 >= num1 and num1 >= num3:
 #             return "Num2 is the largest number"
 #     else: 
-#         return "Num3 is the largest"
-    
+#         return "Num3 is the largest"    
 # L = largestNum(num1,num2,num3)
 # print(L)
 
 
 
+# 8.Print numbers from 1 to 10 using a for loop.
 # for i in range(1 , 11):
 #     print(i)
             
             
-             
+            
+# 9.Print the multiplication table of a number entered by the user.        
 # num = int(input("Enter a number"))
 # for i in range(1, 11):
 #     print(f" {i} x {num} == {i*num}")        
     
 
 
+# 10.Calculate the sum of all numbers from 1 to n.
 # n = int(input("Enter a number"))
 # sum = 0
 # for i in range(1 , n):
@@ -500,26 +511,35 @@
 
 
 
+# 11.Print all even numbers between 1 and 50.
 # for i in range(1 , 50):
 #     if i%2==0:
 #         print(i)
-        
-        
+# or       
 # for i in range(2 , 50 , 2):
 #         print(i) 
 
 
+
+# 12.Create a simple pattern:
+# *
+# **
+# ***
+# ****
 # for i in range(1, 6):
 #     print("*" * i) 
 
 
 
+# 13.Store 5 numbers in a list and print only the even ones.
 # my_list = [5 , 6 , 4 , 7 , 3]  
 # for i in my_list:
 #     if i%2==0:
 #         print("This are the even numbers from my_list:", i)
 
 
+
+# 14.Find the largest and smallest number in a list.
 # my_list = [5 , 6 , 4 , 7 , 3]
 # num1 = my_list[0] 
 # num2 = my_list[0]  
@@ -534,12 +554,14 @@
 
 
 
-
+# 15.Reverse a list without using the built-in reverse function.
 # my_list = [12 , 22 , 34 , 56 , 77 , 88]
 # rev = my_list[::-1]
 # print(rev)
 
 
+
+# 16.Check whether a word is a palindrome (same forward and backward)
 # word = "huhahahuh"
 # rev = word[::-1]
 # if word == rev:
@@ -548,6 +570,8 @@
 #     print("No its a palindrome")
 
 
+
+# 17. Count the number of vowels in a string.
 # word = "Amna You are great person"
 # vowels = "AEIOUaeiou"
 # for i in word:
@@ -555,9 +579,38 @@
 #         print(i , end="  ")
 
 
-sentence = "Hello this is meow"
-word = sentence.split()
-for i in word:
-    print(i)
+
+# 18.Take a sentence and print each word on a new line.
+# sentence = "Hello this is meow"
+# word = sentence.split()
+# for i in word:
+#     print(i)
+
+
+# 20.Write a function that returns the factorial of a number.
+# def factorial(num):
+#     factorial_num = 1
+#     for i in range(1 , num+1):
+#         factorial_num*=i
+#         print(f"{i} x {num} = {factorial_num}")
+#     return factorial_num , num
+# Fac = factorial(5)
+# print(Fac)
+# or
+def factorial(num):
+    factorial_num = 1
+    steps = " "
+    for i in range(1 , num+1):
+        factorial_num *= i
+        steps += str(i)
+        if i != num:
+            steps += " * "
+        else:
+            steps += " = "
+    steps += str(factorial_num)
+    print(steps)
+    return factorial_num
+factorial(5)
+     
 
 
