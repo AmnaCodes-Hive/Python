@@ -356,7 +356,6 @@
 #         if n % i == 0:
 #             return False
 #     return True
-
 # num = is_prime(3)
 # print(num)
 
@@ -587,6 +586,7 @@
 #     print(i)
 
 
+
 # 20.Write a function that returns the factorial of a number.
 # def factorial(num):
 #     factorial_num = 1
@@ -597,20 +597,30 @@
 # Fac = factorial(5)
 # print(Fac)
 # or
-def factorial(num):
-    factorial_num = 1
-    steps = " "
-    for i in range(1 , num+1):
-        factorial_num *= i
-        steps += str(i)
-        if i != num:
-            steps += " * "
-        else:
-            steps += " = "
-    steps += str(factorial_num)
-    print(steps)
-    return factorial_num
-factorial(5)
+# def factorial(num):
+#     factorial_num = 1
+#     steps = " "
+#     for i in range(1 , num+1):
+#         factorial_num *= i
+#         steps += str(i)
+#         if i != num:
+#             steps += " * "
+#         else:
+#             steps += " = "
+#     steps += str(factorial_num)
+#     print(steps)
+#     return factorial_num
+# factorial(5)
      
+
+
+# 20.Write a function to check if a number is prime.
+def prime_num(num):
+    for i in range(2 , num):
+        if i % num == 0:
+            return False
+    return True  
+Pm = prime_num(9)
+
 
 
