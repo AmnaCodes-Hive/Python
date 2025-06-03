@@ -615,12 +615,131 @@
 
 
 # 20.Write a function to check if a number is prime.
-def prime_num(num):
-    for i in range(2 , num):
-        if i % num == 0:
-            return False
-    return True  
-Pm = prime_num(9)
+# def prime_num(num):
+#     if num <= 1:
+#         return "Sorry"
+#     for i in range(2 , num):
+#         if num % i == 0:
+#             return False
+#     return True  
+# Pm = prime_num(4)
+# print(Pm)
 
 
 
+# 21.Find the greatest common divisor (GCD) of two numbers.
+# def gcd(a , b):
+#     while b != 0:
+#         a , b = b , a % b 
+#     return a 
+# a = int(input("Enter number for a here:"))
+# b = int(input("Enter number for b here:"))
+
+# print("the GCD for" , a, "and" , b, "is" , gcd(a , b))
+
+
+
+# 22.Check if a number is a perfect square.
+# def isPsQr(num):
+#     if num < 0:
+#         print("Negative number can't be perfect square" )
+#         return False
+#     for i in range(1 , num+1):
+#         if i * i == num:
+#             print(f"its a perfect square , {i} x {i} = {i*i}")
+#             return True
+#     print("its not a perfect square" )
+#     return False
+# isPsQr(16)
+
+
+# 23.Generate Fibonacci series up to n terms.
+# def fibonacci(num):
+#     a , b = 0 , 1
+#     for i in range(num):
+#         print(a , end=", ")
+#         a , b = b , a+b
+# fibonacci(12) 
+
+
+       
+
+
+# def calculator():
+#     print("Welcome to the simple calculator!")
+#     print("Select operation:")
+#     print("1. Add")
+#     print("2. Subtract")
+#     print("3. Multiply")
+#     print("4. Divide")
+
+#     choice = input("Enter choice (1/2/3/4): ")
+
+#     if choice in ('1', '2', '3', '4'):
+#         try:
+#             num1 = float(input("Enter first number: "))
+#             num2 = float(input("Enter second number: "))
+#         except ValueError:
+#             print("Invalid input. Please enter numeric values.")
+#             return
+
+#         if choice == '1':
+#             print(f"The result is: {num1 + num2}")
+#         elif choice == '2':
+#             print(f"The result is: {num1 - num2}")
+#         elif choice == '3':
+#             print(f"The result is: {num1 * num2}")
+#         elif choice == '4':
+#             if num2 != 0:
+#                 print(f"The result is: {num1 / num2}")
+#             else:
+#                 print("Error: Cannot divide by zero.")
+#     else:
+#         print("Invalid choice. Please select 1, 2, 3, or 4.")
+
+# calculator()
+
+
+
+# Create a calculator that can add, subtract, multiply, or divide two numbers.
+# def calculator():
+#     choice = str(input("Enter the operator (+,-,/,*)"))
+#     if choice in ("+" , "-" , "/" , "*" ):
+#         try:
+#             num1 = int(input("Enter the number 1 here"))
+#             num2 = int(input("Enter the number 2 here"))
+#         except ValueError:
+#             print("Invalid input. Please enter numeric values.")
+#             return
+#         if choice == "+":
+#             print(f"the sum of both number is {num1 + num2}")
+#         elif choice == "-":
+#             print(f"the substract of both number is {num1 - num2}")
+#         elif choice == "*":
+#             print(f"the multiplication of both number is {num1 * num2}")  
+#         elif choice == "/":
+#             if num2 != 0:
+#                 print(f"the division of both number is {num1 / num2}") 
+#             else:
+#                 print("Error: Cannot divide by zero.")
+    
+#     else:
+#          print("Invalid Choice (+,-,/,*)")       
+        
+# calculator()
+
+
+
+# 24.Write a program to check if a number is a prime number.
+num = int(input("Enter number here"))
+if num <= 1:
+    print("they are not prime numbers" , num)
+elif num == 2:
+    print("Its a prime number")
+else:
+    for i in range(3 , num+1):
+        if num % i == 0:
+         print(f"{num} is not a prime number") 
+         break
+    else:
+        print(f"{num} is not a prime number") 
