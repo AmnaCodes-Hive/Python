@@ -731,15 +731,132 @@
 
 
 # 24.Write a program to check if a number is a prime number.
-num = int(input("Enter number here"))
-if num <= 1:
-    print("they are not prime numbers" , num)
-elif num == 2:
-    print("Its a prime number")
-else:
-    for i in range(3 , num+1):
-        if num % i == 0:
-         print(f"{num} is not a prime number") 
-         break
-    else:
-        print(f"{num} is not a prime number") 
+# num = int(input("Enter number here"))
+# if num <= 1:
+#     print("they are not prime numbers" , num)
+# elif num == 2:
+#     print("Its a prime number")
+# else:
+#     for i in range(3 , num+1):
+#         if num % i == 0:
+#          print(f"{num} is not a prime number") 
+#          break
+#     else:
+#         print(f"{num} is not a prime number") 
+
+
+
+# 25.Remove all duplicates from a list.
+# num = input("Enter numbers separated by spaces: " )
+# my_list = [int(x) for x in num.split()]
+# num_list = []
+# for i in my_list:
+#     if i not in num_list:
+#         num_list.append(i)
+# num_list.sort()
+# print("List without duplicates:", num_list)
+# OR
+# num = input("Enter numbers separated by spaces: " )
+# my_list = [int(x) for x in num.split()]
+# num_list = []
+# for i in my_list:
+#     if i not in num_list:
+#         num_list.append(i)
+# num_list.sort(reverse=True)
+# print("List without duplicates:", num_list)
+
+
+
+# 26. Count how many times each number appears in a list.
+# num = input("Enter numbers separated by spaces: " )
+# my_list = [int(x) for x in num.split()]
+# num_list = {}
+# for i in my_list:
+#     if i in num_list:    
+#         num_list[i] += 1
+#     else:
+#         num_list[i] = 1
+# print(num_list)
+
+
+
+# 27.Replace all spaces in a string with hyphens.
+# num = input("Enter numbers: " )
+# my_list = num.replace("","-")
+# print(my_list)
+# or
+# num = input("Enter numbers: " )
+# num_list = ""
+# for i in num:
+#     if i == " ":    
+#         num_list += "-"
+#     else:
+#         num_list += i
+# print(num_list)
+# or
+
+# num = input("Enter sentence: " )
+# num_list = ""
+# for char in num:
+#     if char == " ":    
+#         num_list += "-"
+#     else:
+#         num_list += char
+# print(num_list)
+
+
+
+# list1 = [1,3,5,6,7,8,9]
+# list2 = [1,4,3,77,88,5,3,2]
+# list12 = list1 + list2
+# list12.sort()
+# new_list = []
+# for items in list12:
+#     if items not in new_list:
+#         new_list.append(items)
+# print(list12)
+# print("this the new list: " , new_list)
+
+
+
+# tell = "blue" == "Blue"
+# print(tell)
+
+# number = 4
+# if number * 4 < 15:
+#  print(number / 4)
+# elif number < 5:
+#  print(number + 3)
+# else:
+#  print(number * 2 % 5)
+
+
+
+# def greater_value(x, y):
+#     if x > y:
+#         return x
+#     else:
+#        return y
+
+
+# print(greater_value(10,3*5))
+
+
+# if ((10 >= 5*2) and (10 <= 5*2)):
+#     print(True)
+# else:
+#     print(False)
+
+
+# for x in range(1,11):
+#   print(x**3)
+
+
+input = "Four score and seven years ago"
+# for c in input:
+#   if c.lower() in ['a', 'e', 'i', 'o', 'u']:
+#     print(c)
+# print([c for c in input if c.lower() in ['a', 'e', 'i', 'o', 'u']])
+for c in range(len(input)):
+  if c in ['a', 'e', 'i', 'o', 'u']:
+    print(c)
