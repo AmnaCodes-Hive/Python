@@ -13,9 +13,9 @@ while True:
         print("Congratulations🎉 you guessed it right")
         break
     elif Guess < secret_number:
-        print("Too low You are very close Try one again")
+        print("Too low You are very close Try one again😞")
     elif Guess > secret_number:
-        print("Too High You are very close Try one again")
+        print("Too High You are very close Try one again😖")
     else:
-        print("Value Error Please enter a valid number!")
+        print("Value Error Please enter a valid number!❌")
     
